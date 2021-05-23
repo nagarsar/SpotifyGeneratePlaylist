@@ -1,8 +1,8 @@
 # Spotify tools
 
-Setup permanent access to spotify API using refresh tokens
-Export your spotify playlists into files with genres and features
-Create playlists from text files
+Setup permanent access to spotify API using refresh tokens  
+Export your spotify playlists into files with genres and features  
+Create playlists from text files  
 
 
 ## Technologies
@@ -49,12 +49,12 @@ save client_id, client_secrect, redirect_uri
 
 
 ### compose a curl request 
-refer:https://developer.spotify.com/documentation/general/guides/authorization-guide/
+refer:https://developer.spotify.com/documentation/general/guides/authorization-guide/  
 
-put the base_64 code after 'Basic'
-put the access token after code=
-mention the encoded callback
-finally put the endpoint url: https://accounts.spotify.com/api/token
+put the base_64 code after 'Basic'  
+put the access token after code=  
+mention the encoded callback  
+finally put the endpoint url: https://accounts.spotify.com/api/token  
 
     curl -H "Authorization: Basic ZGM2OGVkMzY4Yjg0NDU1YTk0Njc1ODZhNGIxZmNlYjg6ODIxNTNmZjI1MjNjNDMwOGE2OGVjMDVjOGUwMjhlZjI=" -d grant_type=authorization_code -d code=AQDiJpEFDX1Ge9Mi0b-pzugWCZOIIcHAWnz-0BfLI60pbd2rkcqX5VeN1moCrwXIASIZi-pnKnL9Ww8YSp_pdAnOh1VT_VbHe1hdKY3wxdBfDMVdqsY39TjCxJ3twl0kjGMlk-qOCvY0m48wUJO7rwj4brbof-VcU9_QoLbEvpRy4CaPJgY9KG5LRPPCW5I0MZJKDoHc89fKB_QHCCFz4b9yLmDTCHr70aibhdpZWy2S4bddqi_AN8uCKKqqm5umWmNcneRnDXdWMnhAe2pOiHJBTMt-79RrYUnXFXk46wKpgBUO2DkZGmyqlWbg_OWiWNPO5Fk5GhbqBIiX8zs0PNzUP2QT8-vrDeTyUU6iykDxuEUnnuLOEvnNCI4s9cTUADy6KWGaFX4reUqJVgXXf2ejBBdwmgJ6 -d redirect_uri=https%3A%2F%2Fexample.com%2Fcallback https://accounts.spotify.com/api/token
 
